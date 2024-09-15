@@ -7,25 +7,25 @@ body, html {
 }
 
 .birthdayimg {
-  background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
+  background-image: url("AdobeStock_524629361_Preview.jpg") ;
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
-  color: red;
+  color: #323d43;
   font-size: 35px;
 }
 
 .topleft {
   position: absolute;
-  color: yellow;
+  color: #323d43;
   top: 0;
   left: 12px;
 }
 
 .bottomleft {
   position: absolute;
-  color: red;
+  color: #323d43;
   bottom:0;
   left: 18px;
 }
@@ -47,37 +47,20 @@ hr {
 <body>
 <div class="birthdayimg">
   <div class="topleft">
-    <p>CODING4FUN</p>
+    <p>HappyBithday</p>
   </div>
   <div class="middle">
-    <h1>Ready for the Surprise ?</h1>
+    <h1><a href="https://docs.google.com/spreadsheets/d/16_a6L1oF4xe2CoJ8I1okdlp8oWqSE4iCom7Nf6dkyz8/edit?gid=0#gid=0" target="_blank">Ready for the Surprise ?</a></h1>
     <hr>
     <p id="amx" style="font-size:80px"></p>
   </div>
   <div class="bottomleft">
-    <p>Created by AmX</p>
+    <p>Created by LeTrinh</p>
   </div>
 </div>
 
 <script>
-var countDownDate = new Date("Jan 9, 2022 00:00:00").getTime();
 
-var countdownfunction = setInterval(function() {
-
-  var now = new Date().getTime();
-var distance = countDownDate - now;
-
- var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("amx").innerHTML = days + "D " + hours + "H "
-  + minutes + "M " + seconds + "S ";
-
-
-
-}, 1000);
 </script>
 
 </body>
